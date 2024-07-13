@@ -23,7 +23,7 @@
 
 
 ## 폴더 구조 및 컴포넌트 구조 요약
-<img width="245" alt="image" src="https://github.com/user-attachments/assets/b2174012-f782-4781-8409-7a933e13bfe6">       
+<img width="245" alt="image" src="https://github.com/user-attachments/assets/71f9f7dd-6f06-4754-8c5f-be544a57ae68">
 <br/><br/>
 
 `src/assets`: 컴포넌트 내부에서 사용되는 여러 svg 등 저장
@@ -45,8 +45,29 @@
 
 <br/>
 
-`src/page/~~/components`: 컴포넌트 내부에서 사용되는 여러 svg 등 저장
-  * 이후 png, jpg 등 다양한 확장자를 가진 파일 추가 가능성이 있으므로 SVG라는 파일 하위에 요소 저장 진행
+`src/page/~~/components`: ~~ 페이지에서 동일 관심 주제 요소로 컴포넌트를 분리하여 구성
+  * 한 페이지에도 다양한 파트가 모여 구성 (ex. 광고, 픽드랍, 인기 차량, 추천 차량 등)
+  * 따라서, 해당 요소들을 분리하여 컴포넌트 구성 => 이로 필요한 컴포넌트의 사이즈가 줄고 컴포넌트의 관심사를 좁힐 수 있음
+  * src/page/MainPage/components/PopularCar, src/page/MainPage/components/AdvertisementSection 등으로 구성
+
+
+
+<br/>
+
+`src/styles`: 전역적으로 사용 가능한 css 파일로 구성 
+  * 태그들의 초기 디자인 리셋, 디자인 시스템 등 사이트에서 공통적으로 사용하는 디자인을 설정하는 파일
+  * a태그의 방문 기록, 밑줄 혹은 ul, li 태그의 padding 등 기존에 설정되어 있는 css를 전역적으로 초기화 혹은 사전 포멧팅 가능
+  * src/styles/global/reset.js 등으로 구성
+
+<br/>
+
+`src/utils`: 페이지에서 사용하는 정적인 데이터 파일로 구성
+  * popular car, recommendation car 등 정적인 값을 저장하는 파일
+  * 각 파일에서 export 하여 값 접근하는 방식으로 사용
+  * src/utils/constant/PopularCar.js, src/utils/constant/recommendationCar.js 등으로 구성
+
+<br/>
+
 
 
 ## 왜 이렇게 설계했는지

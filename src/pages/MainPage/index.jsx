@@ -1,4 +1,5 @@
 import AdvertisementSection from "./components/AdvertisementSection";
+import PickDropSection from "./components/PickDropSection";
 import PopularCar from "./components/PopularCar";
 import RecommendCar from "./components/RecommendCar";
 import * as S from "./MainPage.styled";
@@ -7,6 +8,7 @@ function MainPage() {
   return (
     <S.Container>
       <AdvertisementSection />
+      <PickDropSection />
       <S.CarContainer>
         <PopularCar />
         <RecommendCar />

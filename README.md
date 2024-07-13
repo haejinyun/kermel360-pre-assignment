@@ -1,9 +1,13 @@
-<!-- # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). -->
-# kernel360 프론트엔드 과정 사진 과제 레포지토리 입니다.
+# **kernel360 프론트엔드 과정 사진 과제 레포지토리 입니다.**
 
----
+## 사용 기술 스택
+- React (create-react-app 사용)
+- JavaScript 
+- React Router
+- styled-components
+- Lucide icons
+
 ## 컴포넌트 설계 시 고려했던 부분 
 >  실제 서비스라면?
 
@@ -13,78 +17,50 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
   * 부모 자식 간의 컴포넌트는 `props`로 값을 넘기며 재활용성을 높였습니다.
   * 조건부 렌더링을 통해, 이후 컴포넌트의 활용도를 높이도록 구성하였습니다.
-  * cssdp props로 요소를 전달하여 상황에 맞는 css 적용이 가능하도록 구성하였습니다.   
+  * cssdp props로 요소를 전달하여 상황에 맞는 css 적용이 가능하도록 구성하였습니다.
+  * 적절한 파일 구조 분리  
 
-     
+
+
 ## 폴더 구조 및 컴포넌트 구조 요약
+<img width="245" alt="image" src="https://github.com/user-attachments/assets/b2174012-f782-4781-8409-7a933e13bfe6">       
+<br/><br/>
+
+`src/assets`: 컴포넌트 내부에서 사용되는 여러 svg 등 저장
+  * 이후 png, jpg 등 다양한 확장자를 가진 파일 추가 가능성이 있으므로 SVG라는 파일 하위에 요소 저장 진행     
+
+<br/>
+
+`src/components`: 중복적으로 사용되는 요소들로 구성 / ex) 이후 map들을 활용하여 반복적으로 사용되는 요소들
+  * test
+  * src/components/CarCard, src/page/PickDrop 등으로 구성
+
+
+<br/>
+
+`src/page`: 실제적인 페이지를 구성하는 요소 / ex) MainPage, DetailCarPage 등의 요소들 구성
+  * 웹 사이트의 한 페이지를 가지는 파일들을 묶고 있는 파일로, 해당 폴더 내부의 폴더의 index.jsx로 라우팅을 통해서 페이지 구성
+  * src/page/MainPage, src/page/DetailCarPage 등으로 구성
+
+
+<br/>
+
+`src/page/~~/components`: 컴포넌트 내부에서 사용되는 여러 svg 등 저장
+  * 이후 png, jpg 등 다양한 확장자를 가진 파일 추가 가능성이 있으므로 SVG라는 파일 하위에 요소 저장 진행
+
+
 ## 왜 이렇게 설계했는지
+
+시안이 나와있는 디자인만을 고려하기보다는 이것이 실제 서비스화 되었을떄를 고려하려 했다.
+만약 Rent Car 웹 사이트가 실제화 된다면 이는 하나의 페이지로만 구성이 되는 것이 아니라 다양한 페이로 구성이 될 것이다. 
+따라서 각 페이지를 구성하는 Page 폴더를 만들어서 진행했다.
+
+A. 재활용 가능한 컴포넌트 요소인가
+B. Page
+
 ## 내가 만든 컴포넌트들의 재사용성에 대해 스스로 평가해보기
+
 ## 컴포넌트를 설계하며 어려웠던 점
-
-<!-- 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
+* 광고의 특성을 고려하다 보니 해당 컴포넌트를 구성하는 파트가 고민이 되었다.
+  동일한 요소로 구성되어 있지만 이것을 재활용 가능한 컴포넌트로 사용하게 된다면 props로 전달 받아야 하는 요소들이 많아지는 것이 고민이었습니다.
+  해당 광고 포멧이 꾸준히 사용되는 것이라면 재활용 가능한 컴포넌트로 분리하는 것이 득이지만 특집 광고처럼 빠른 교체가 이루어 지는 것이라면 컴포넌트의 장점이 없어져 컴포넌트를 설계하는 과정에서 고민이 되었다.

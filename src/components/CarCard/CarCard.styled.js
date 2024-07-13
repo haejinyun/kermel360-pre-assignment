@@ -10,6 +10,7 @@ export const Container = styled.div`
   padding: 24px;
   border: 1px solid rgba(144, 163, 191, 0.2);
   box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 1);
 `;
 
 export const TitleSection = styled.div`

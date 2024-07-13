@@ -8,6 +8,7 @@ export const Container = styled.div`
   padding: 0 60px;
   width: 1320px;
   height: 124px;
+  border-bottom: 1px solid rgba(195, 212, 233, 0.4);
 `;
 
 export const Title = styled.div`

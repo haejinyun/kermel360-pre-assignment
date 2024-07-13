@@ -1,3 +1,4 @@
+import AdvertisementSection from "./components/AdvertisementSection";
 import PopularCar from "./components/PopularCar";
 import RecommendCar from "./components/RecommendCar";
 import * as S from "./MainPage.styled";
@@ -5,6 +6,7 @@ import * as S from "./MainPage.styled";
 function MainPage() {
   return (
     <S.Container>
+      <AdvertisementSection />
       <S.CarContainer>
         <PopularCar />
         <RecommendCar />

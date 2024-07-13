@@ -26,21 +26,31 @@
 <img width="245" alt="image" src="https://github.com/user-attachments/assets/71f9f7dd-6f06-4754-8c5f-be544a57ae68">
 <br/><br/>
 
+### [라우팅 방식] 
+* Outlet 컴포넌트 활용     
+  Outlet의 중첩 라우팅을 통해 상위 컴포넌트를 레이아웃하여, 마치 {children}을 사용하는 것과 같이 내부 요소들을 바꾸는 방식으로 라우팅 구성
+
+
+<br/>
+  
+
+### [폴더 구조]
 `src/assets`: 컴포넌트 내부에서 사용되는 여러 svg 등 저장
-  * 이후 png, jpg 등 다양한 확장자를 가진 파일 추가 가능성이 있으므로 SVG라는 파일 하위에 요소 저장 진행     
+  * 이후 png, jpg 등 다양한 확장자를 가진 파일 추가 가능성이 있으므로 SVG라는 파일 하위에 요소 저장 진행
+
+
 
 <br/>
 
-`src/components`: 중복적으로 사용되는 요소들로 구성 / ex) 이후 map들을 활용하여 반복적으로 사용되는 요소들
-  * test
+`src/components`: 중복적으로 사용되는 재활용 가능한 요소들로 구성 / ex) 이후 map들을 활용하여 반복적으로 사용되는 요소들
   * src/components/CarCard, src/page/PickDrop 등으로 구성
 
 
 <br/>
 
-`src/page`: 실제적인 페이지를 구성하는 요소 / ex) MainPage, DetailCarPage 등의 요소들 구성
-  * 웹 사이트의 한 페이지를 가지는 파일들을 묶고 있는 파일로, 해당 폴더 내부의 폴더의 index.jsx로 라우팅을 통해서 페이지 구성
-  * src/page/MainPage, src/page/DetailCarPage 등으로 구성
+`src/page`: 실질적인 페이지를 구성하는 요소 / ex) MainPage, DetailCarPage 등의 요소들 구성
+  * 웹 사이트의 한 페이지를 보여주는 파일들을 묶고 있는 파일로, 해당 폴더 내부의 폴더의 index.js로 라우팅을 통해서 페이지 구성
+  *. src/page/MainPage, src/page/DetailCarPage 등으로 구성
 
 
 <br/>
@@ -61,7 +71,8 @@
 
 <br/>
 
-`src/utils`: 페이지에서 사용하는 정적인 데이터 파일로 구성
+`src/utils`: 페이지에서 사용하는 데이터 파일로 구성
+  * 이 또한 실제 페이지의 경우 다양한 파일이 추가 가능하기에 constant라는 내부 폴더 하위에 파일 구성
   * popular car, recommendation car 등 정적인 값을 저장하는 파일
   * 각 파일에서 export 하여 값 접근하는 방식으로 사용
   * src/utils/constant/PopularCar.js, src/utils/constant/recommendationCar.js 등으로 구성

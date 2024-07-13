@@ -1,0 +1,21 @@
+import CarCard from "components/CarCard";
+import * as S from "./PopularCar.styled";
+import { POPULAR_CAR } from "\butils/constant/popularCar";
+
+function PopularCar() {
+  return (
+    <S.Container>
+      <S.TopSection>
+        <S.Title>Popular Car</S.Title>
+        <S.ViewButton>View All</S.ViewButton>
+      </S.TopSection>
+      <S.CarContainer>
+        {POPULAR_CAR.slice(0, 4).map((car) => (
+          <CarCard car={car} />
+        ))}
+      </S.CarContainer>
+    </S.Container>
+  );
+}
+
+export default PopularCar;

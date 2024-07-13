@@ -5,7 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: space-between;
   width: 304px;
-  /* height: 388px; */
+  height: 388px;
   border-radius: 10px;
   padding: 24px;
   border: 1px solid rgba(144, 163, 191, 0.2);
@@ -146,4 +146,5 @@ export const RentButton = styled.button`
   letter-spacing: -0.02em;
   text-align: center;
   color: rgba(255, 255, 255, 1);
+  cursor: pointer;
 `;

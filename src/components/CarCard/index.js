@@ -5,7 +5,6 @@ import { ReactComponent as PeopleIcon } from "assets/svg/peopleIcon.svg";
 import { ReactComponent as ManualIcon } from "assets/svg/manualIcon.svg";
 
 function CarCard({ car }) {
-  console.log(car);
   return (
     <S.Container>
       <S.CarContainer>

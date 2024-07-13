@@ -5,8 +5,14 @@ import * as S from "./MainPage.styled";
 function MainPage() {
   return (
     <S.Container>
-      <PopularCar />
-      <RecommendCar />
+      <S.CarContainer>
+        <PopularCar />
+        <RecommendCar />
+      </S.CarContainer>
+      <S.ButtonSection>
+        <S.MoreButton>Show more car</S.MoreButton>
+        <S.Count>120 Car</S.Count>
+      </S.ButtonSection>
     </S.Container>
   );
 }

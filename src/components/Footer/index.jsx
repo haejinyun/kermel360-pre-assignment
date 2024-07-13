@@ -32,7 +32,9 @@ function Footer() {
               <S.InfoTitle>{info.title}</S.InfoTitle>
               <S.InfoValueSection>
                 {info.items.map((item) => (
-                  <S.InfoValue key={item}>{item}</S.InfoValue>
+                  <a href="/">
+                    <S.InfoValue key={item}>{item}</S.InfoValue>
+                  </a>
                 ))}
               </S.InfoValueSection>
             </S.Info>

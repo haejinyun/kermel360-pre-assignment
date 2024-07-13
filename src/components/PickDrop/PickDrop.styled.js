@@ -36,7 +36,7 @@ export const RadioInput = styled.input.attrs({ type: "radio" })`
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background-color: rgba(53, 99, 233, 1); // 내부 원의 색상
+    background-color: rgba(53, 99, 233, 1);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -71,7 +71,6 @@ export const Setting = styled.div`
 `;
 
 export const SettingTitle = styled.div`
-  //styleName: Bold/Type@16;
   font-family: Plus Jakarta Sans;
   font-size: 16px;
   font-weight: 700;
@@ -92,15 +91,12 @@ export const Division = styled.div`
 export const SettingDropDown = styled.div`
   display: flex;
   align-items: center;
-  /* width: 126px; */
   height: 20px;
-  /* gap: 8px; */
   width: ${(props) => props.width};
   justify-content: space-between;
 `;
 
 export const SettingValue = styled.div`
-  //styleName: Medium/Type@12;
   font-family: Plus Jakarta Sans;
   font-size: 12px;
   font-weight: 500;

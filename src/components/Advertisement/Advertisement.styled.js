@@ -23,7 +23,6 @@ export const Advertisement = styled.div`
 `;
 
 export const AdvertisementTitle = styled.div`
-  //styleName: Semibold/Type@32;
   font-family: Plus Jakarta Sans;
   font-size: 32px;
   font-weight: 600;
@@ -34,7 +33,6 @@ export const AdvertisementTitle = styled.div`
 `;
 
 export const AdvertisementDescription = styled.div`
-  //styleName: Medium/Type@16;
   font-family: Plus Jakarta Sans;
   font-size: 16px;
   font-weight: 500;

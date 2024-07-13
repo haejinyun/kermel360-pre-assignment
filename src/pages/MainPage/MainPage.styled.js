@@ -34,7 +34,6 @@ export const MoreButton = styled.button`
   cursor: pointer;
   border-radius: 4px;
   background-color: rgba(53, 99, 233, 1);
-  //styleName: Semibold/Type@16;
   font-family: Plus Jakarta Sans;
   font-size: 16px;
   font-weight: 600;
@@ -45,7 +44,6 @@ export const MoreButton = styled.button`
 `;
 
 export const Count = styled.span`
-  //styleName: Medium/Type@14;
   font-family: Plus Jakarta Sans;
   font-size: 14px;
   font-weight: 500;

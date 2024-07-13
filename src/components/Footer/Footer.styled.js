@@ -63,7 +63,6 @@ export const InfoSection = styled.div`
 export const Info = styled.div``;
 
 export const InfoTitle = styled.div`
-  //styleName: Semibold/Type@20;
   font-family: Plus Jakarta Sans;
   font-size: 20px;
   font-weight: 600;

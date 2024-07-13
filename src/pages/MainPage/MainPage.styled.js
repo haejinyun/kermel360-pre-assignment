@@ -5,7 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 32px 60px 62px 60px;
-  gap: 62px;
+  gap: 32px;
   background-color: rgba(246, 247, 249, 1);
 `;
 
@@ -22,7 +22,7 @@ export const ButtonSection = styled.div`
   justify-content: space-between;
   align-items: center;
   padding-right: 23px;
-  /* width: 1312px; */
+  margin-top: 30px;
   width: 734px;
 `;
 

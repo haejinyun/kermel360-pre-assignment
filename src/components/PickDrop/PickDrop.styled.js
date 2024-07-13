@@ -45,7 +45,7 @@ export const RadioInput = styled.input.attrs({ type: "radio" })`
 `;
 
 export const RadioText = styled.div`
-  //styleName: Semibold/Type@16;
+  display: flex;
   font-family: Plus Jakarta Sans;
   font-size: 16px;
   font-weight: 600;
@@ -57,6 +57,7 @@ export const RadioText = styled.div`
 
 export const SettingContainer = styled.div`
   display: flex;
+  width: 100%;
 `;
 
 export const SettingSection = styled.div`
@@ -91,9 +92,11 @@ export const Division = styled.div`
 export const SettingDropDown = styled.div`
   display: flex;
   align-items: center;
-  width: 126px;
+  /* width: 126px; */
   height: 20px;
-  gap: 8px;
+  /* gap: 8px; */
+  width: ${(props) => props.width};
+  justify-content: space-between;
 `;
 
 export const SettingValue = styled.div`

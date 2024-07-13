@@ -50,6 +50,7 @@ export const UserSection = styled.div`
 `;
 
 export const IconBorder = styled.div`
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,4 +58,14 @@ export const IconBorder = styled.div`
   border-radius: 50%;
   width: 44px;
   height: 44px;
+`;
+
+export const NotificationBadge = styled.div`
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  top: 2px;
+  left: 32px;
+  border-radius: 50%;
+  background-color: rgba(255, 68, 35, 1);
 `;

@@ -9,8 +9,8 @@ function RecommendCar() {
         <S.Title>Recomendation Car</S.Title>
       </S.TopSection>
       <S.CarContainer>
-        {RECOMMENDATION_CAR.slice(0, 8).map((car) => (
-          <CarCard car={car} />
+        {RECOMMENDATION_CAR.slice(0, 8).map((car, index) => (
+          <CarCard car={car} key={index} />
         ))}
       </S.CarContainer>
     </S.Container>

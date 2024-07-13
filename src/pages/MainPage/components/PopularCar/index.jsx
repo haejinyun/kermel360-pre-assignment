@@ -10,8 +10,8 @@ function PopularCar() {
         <S.ViewButton>View All</S.ViewButton>
       </S.TopSection>
       <S.CarContainer>
-        {POPULAR_CAR.slice(0, 4).map((car) => (
-          <CarCard car={car} />
+        {POPULAR_CAR.slice(0, 4).map((car, index) => (
+          <CarCard car={car} key={index} />
         ))}
       </S.CarContainer>
     </S.Container>

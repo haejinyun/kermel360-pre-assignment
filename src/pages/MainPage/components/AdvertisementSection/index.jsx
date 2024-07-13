@@ -45,8 +45,8 @@ const ADVERTISEMENT = [
 function AdvertisementSection() {
   return (
     <S.Container>
-      {ADVERTISEMENT.map((ad) => (
-        <Advertisement ad={ad} key={ad.title} />
+      {ADVERTISEMENT.map((ad, index) => (
+        <Advertisement ad={ad} key={index} />
       ))}
     </S.Container>
   );

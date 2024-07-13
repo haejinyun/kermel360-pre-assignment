@@ -59,7 +59,7 @@ export const RentButton = styled.button`
   padding: 0 20px;
   gap: 8px;
   border-radius: 4px;
-  background-color: ${(props) => props.buttonColor};
+  background-color: ${(props) => props.color};
   border: none;
   cursor: pointer;
 `;

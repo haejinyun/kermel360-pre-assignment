@@ -9,7 +9,7 @@ function Advertisement({ ad }) {
           {ad.description}
         </S.AdvertisementDescription>
       </S.Advertisement>
-      <S.RentButton buttonColor={ad.buttonColor}>Rental Car</S.RentButton>
+      <S.RentButton color={ad.buttonColor}>Rental Car</S.RentButton>
     </S.Container>
   );
 }

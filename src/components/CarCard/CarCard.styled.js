@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -11,6 +12,15 @@ export const Container = styled.div`
   border: 1px solid rgba(144, 163, 191, 0.2);
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 1);
+`;
+
+export const Blur = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 68px;
+  top: 167px;
+  left: 0px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
 `;
 
 export const TitleSection = styled.div`

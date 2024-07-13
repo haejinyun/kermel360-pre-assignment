@@ -37,6 +37,16 @@ export const SearchInput = styled.input`
   border: none;
   outline: none;
   margin-left: 20px;
+
+  &::placeholder {
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: -0.02em;
+    text-align: justified;
+    color: rgba(89, 103, 128, 1);
+  }
 `;
 
 export const SearchSettingIcon = styled(SettingIcon)`

@@ -7,6 +7,7 @@ import { ReactComponent as ManualIcon } from "assets/svg/manualIcon.svg";
 function CarCard({ car }) {
   return (
     <S.Container>
+      <S.Blur />
       <S.CarContainer>
         <S.TitleSection>
           <S.NameSection>

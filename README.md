@@ -149,7 +149,8 @@
 <br/>    
 
 #### [요약]
-A. 한 페이지[Sample]를 src/[Sample]/components 폴더 아래에 관심 요소에 맞게 **분할하여 구현** (ex.PickDropSection, PopularCarSection) 후, `해당 요소들을 합쳐 페이지 구성`          
+A. 한 페이지[Sample]를 src/[Sample]/components 폴더 아래에 관심 요소에 맞게 **분할하여 구현** (ex.PickDropSection, PopularCarSection) 후, `해당 요소들을 합쳐 페이지 구성`      
+
 B. 분할한 요소에서 **공통으로 사용할 요소**가 있다면 이는 `src/components 폴더에 구현`       
 
 이렇게 분리하였을 때, 페이지의 요소들의 수정과 개발에 용이하다는 이점을 보았습니다.      
@@ -167,8 +168,13 @@ B. 분할한 요소에서 **공통으로 사용할 요소**가 있다면 이는 
 * page 내부의 파일 하위의 components 요소의 경우는 재사용성 보다는 큰 컴포넌트를 작은 컴포넌트로 쪼개어 개발을 한다는 의미가 큰 영역인지라, 재사용성과는 큰 관련이 없다.
   * ex. `src/pages/MainPage/components/AdvertisementSection`과 형제 파일들
 
+<br/>
+
 * src 하위의 components 요소의 경우 재사용이 가능한, 즉 여러 컴포넌트 혹은 한 컴포넌트에서 반복적으로 사용되는 요소를 컴포넌트와 하여 재사용 가능하게 개발 진행하였다.
   * ex. `src/components/Adcertisement` 형제 파일들
+
+<br/>
+
 
 * 재사용이 가능한 컴포넌트를 개발함에 있어 컴포넌트로 분리를 하는 기준이 조금 크다.
    <img width="812" alt="image" src="https://github.com/user-attachments/assets/f1fd0094-ae0f-4c9e-abf6-337be128cd10">        

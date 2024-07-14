@@ -13,10 +13,12 @@ function MainPage() {
         <PopularCar />
         <RecommendCar />
       </S.CarContainer>
-      <S.ButtonSection>
-        <S.MoreButton>Show more car</S.MoreButton>
-        <S.Count>120 Car</S.Count>
-      </S.ButtonSection>
+      <S.ShowMoreSection>
+        <S.ButtonSection>
+          <S.MoreButton>Show more car</S.MoreButton>
+          <S.Count>120 Car</S.Count>
+        </S.ButtonSection>
+      </S.ShowMoreSection>
     </S.Container>
   );
 }

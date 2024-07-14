@@ -16,6 +16,11 @@ export const CarContainer = styled.div`
   gap: 32px;
 `;
 
+export const ShowMoreSection = styled.div`
+  display: flex;
+  width: 1320px;
+`;
+
 export const ButtonSection = styled.div`
   display: flex;
   margin-left: auto;

@@ -1,8 +1,8 @@
 import CarCard from "components/CarCard";
-import * as S from "./PopularCar.styled";
+import * as S from "./PopularCarSection.styled";
 import { POPULAR_CAR } from "\butils/constant/popularCar";
 
-function PopularCar() {
+function PopularCarSection() {
   return (
     <S.Container>
       <S.TopSection>
@@ -18,4 +18,4 @@ function PopularCar() {
   );
 }
 
-export default PopularCar;
+export default PopularCarSection;

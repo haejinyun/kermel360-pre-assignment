@@ -1,8 +1,8 @@
-import * as S from "./RecommendCar.styled";
+import * as S from "./RecommendCarSection.styled";
 import CarCard from "components/CarCard";
 import { RECOMMENDATION_CAR } from "\butils/constant/recommendationCar";
 
-function RecommendCar() {
+function RecommendCarSection() {
   return (
     <S.Container>
       <S.TopSection>
@@ -17,4 +17,4 @@ function RecommendCar() {
   );
 }
 
-export default RecommendCar;
+export default RecommendCarSection;
